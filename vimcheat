@@ -50,6 +50,8 @@ ce                        # change (replace) to the end of the next word
 cb                        # change (replace) to the start of the previous word
 c0                        # change (replace) to the start of the line
 c$                        # change (replace) to the end of the line
+ci"                       # change (replace) inside quotes
+ci)                       # change (replace) inside parentheses
 s                         # delete character and substitute text
 S                         # delete line and substitute text (same as cc)
 xp                        # transpose two letters (delete and paste)
@@ -86,6 +88,8 @@ dd                        # delete (cut) a line
 dw                        # delete (cut) the characters of the word from the cursor position to the start of the next word
 D                         # delete (cut) to the end of the line
 d$                        # delete (cut) to the end of the line
+di"                       # delete (cut) inside quotes
+di)                       # delete (cut) inside parentheses
 d^                        # delete (cut) to the first non-blank character of the line
 d0                        # delete (cut) to the begining of the line
 x                         # delete (cut) character

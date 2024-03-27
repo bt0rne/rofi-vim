@@ -34,7 +34,7 @@ function rvim() {
 	sheet_check
 
 	sheet=$(cat "$VIM_FILE")
-	line=$(echo "$sheet" | rofi -dmenu -p "Vim action" -i -theme-str 'window {width: 98%;}' -theme-str 'window {location: north;}')
+	line=$(echo "$sheet" | rofi -dmenu -p " " -i -theme-str 'window {width: 75%;}' -theme-str 'window {location: 0;}')
 	exit_code=$?
 
 	line=("$line")
@@ -44,7 +44,7 @@ function dvim() {
 	sheet_check
 
 	sheet=$(cat "$VIM_FILE")
-	line=$(echo "$sheet" | dmenu -fn "mono 23" -p "Vim action" -i -l 15)
+	line=$(echo "$sheet" | dmenu -fn "mono 23" -p " " -i -l 15)
 	exit_code=$?
 
 	line=("$line")
